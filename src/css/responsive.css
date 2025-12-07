@@ -1,0 +1,916 @@
+/* ===== RESPONSIVE DESIGN ===== */
+/* Mobile First Approach */
+
+/* ===== EXTRA LARGE SCREENS (1200px and above) ===== */
+@media (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+    padding: 50px 0;
+    margin-top: 50px;
+  }
+
+  .left-section {
+    padding: 40px 80px;
+  }
+
+  .skills,
+  .projects {
+    max-width: 1200px;
+    padding: 80px 40px;
+  }
+
+  .about {
+    width: 70vw;
+    padding: 50px 40px;
+  }
+
+  .connect {
+    width: 60vw;
+    padding: 70px 40px;
+  }
+}
+
+/* ===== LARGE SCREENS (992px - 1199px) ===== */
+@media (max-width: 1199px) and (min-width: 992px) {
+  main {
+    max-width: 100%;
+    padding: 40px 20px;
+    margin-top: 30px;
+  }
+
+  .left-section {
+    padding: 30px 60px;
+  }
+
+  .left-section h1 {
+    font-size: 2.4rem;
+  }
+
+  .left-section h2 span {
+    font-size: 1.5rem;
+  }
+
+  #profilePic {
+    width: 320px;
+    height: 320px;
+  }
+
+  .skills,
+  .projects {
+    padding: 60px 30px;
+  }
+
+  .skills h1,
+  .projects-header h1 {
+    font-size: 2.3rem;
+  }
+
+  .skills ul {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    gap: 24px;
+  }
+
+  .about {
+    width: 75vw;
+    padding: 40px 35px;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .connect {
+    width: 65vw;
+    padding: 60px 30px;
+  }
+}
+
+/* ===== MEDIUM SCREENS (768px - 991px) ===== */
+@media (max-width: 991px) and (min-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 30px 20px;
+    margin-top: 25px;
+  }
+
+  .left-section {
+    padding: 20px 40px;
+    text-align: center;
+  }
+
+  .left-section h1 {
+    font-size: 2.1rem;
+  }
+
+  .left-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .left-section h2 span {
+    font-size: 1.4rem;
+  }
+
+  .left-section p {
+    font-size: 1rem;
+  }
+
+  .right-section {
+    padding: 20px;
+    width: 100%;
+  }
+
+  #profilePic {
+    width: 240px;
+    height: 240px;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  .icon-menu {
+    width: auto;
+  }
+
+  .skills {
+    padding: 50px 20px;
+  }
+
+  .skills h1 {
+    font-size: 2rem;
+  }
+
+  .skills ul {
+    grid-template-columns: repeat(3, minmax(110px, 1fr));
+    gap: 20px;
+  }
+
+  .projects {
+    padding: 50px 20px;
+  }
+
+  .projects-header h1 {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .about {
+    width: 85vw;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .about h1 {
+    font-size: 1.7rem;
+    justify-content: center;
+  }
+
+  .about-icon {
+    font-size: 1.7rem;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+  }
+
+  .connect {
+    width: 80vw;
+    padding: 50px 20px;
+  }
+
+  .connect h1 {
+    font-size: 1.7rem;
+  }
+
+  footer {
+    padding: 50px 20px 25px;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .footer-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+}
+
+/* ===== TABLETS (600px - 767px) ===== */
+@media (max-width: 767px) and (min-width: 600px) {
+  main {
+    flex-direction: column;
+    padding: 25px 15px;
+    margin-top: 20px;
+  }
+
+  .left-section {
+    padding: 20px 25px;
+    text-align: center;
+  }
+
+  .left-section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .left-section h2 {
+    font-size: 1.1rem;
+  }
+
+  .left-section h2 span {
+    font-size: 1.2rem;
+  }
+
+  .left-section p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-btn {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+  }
+
+  .right-section {
+    padding: 15px;
+    width: 100%;
+  }
+
+  #profilePic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0.8rem;
+  }
+
+  nav ul {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    margin: 0 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .icon-menu {
+    width: 100%;
+  }
+
+  .skills {
+    padding: 40px 15px;
+    margin-top: 35px;
+  }
+
+  .skills h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .skills ul {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 18px;
+    padding: 0 10px;
+  }
+
+  .skills ul li {
+    padding: 15px;
+  }
+
+  .skills ul li img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .projects {
+    padding: 40px 15px;
+    margin-top: 35px;
+  }
+
+  .projects-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .projects-header p {
+    font-size: 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+
+  .project-content {
+    padding: 18px;
+  }
+
+  .project-link {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .about {
+    width: 90vw;
+    padding: 25px 18px;
+    text-align: center;
+  }
+
+  .about h1 {
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+  .about-icon {
+    font-size: 1.5rem;
+    margin-right: 6px;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .connect {
+    width: 90vw;
+    padding: 40px 18px;
+  }
+
+  .connect h1 {
+    font-size: 1.5rem;
+  }
+
+  .connect p {
+    font-size: 0.9rem;
+  }
+
+  #conectA {
+    padding: 8px 40px;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 40px 15px 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .footer-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-section h4 {
+    font-size: 0.95rem;
+  }
+
+  .footer-section p {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+
+  .navbar {
+    margin: 8px;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+}
+
+/* ===== SMALL PHONES (480px - 599px) ===== */
+@media (max-width: 599px) and (min-width: 480px) {
+  main {
+    flex-direction: column;
+    padding: 20px 12px;
+    margin-top: 15px;
+  }
+
+  .left-section {
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .left-section h1 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+
+  .left-section h2 {
+    font-size: 1rem;
+  }
+
+  .left-section h2 span {
+    font-size: 1.1rem;
+  }
+
+  .left-section p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .cta-btn {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+
+  .right-section {
+    padding: 12px;
+    width: 100%;
+  }
+
+  #profilePic {
+    width: 160px;
+    height: 160px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0.6rem;
+    border-radius: 15px;
+    margin: 6px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  nav ul {
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+  }
+
+  .navbar a {
+    margin: 0 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .icon-menu ul {
+    gap: 10px;
+  }
+
+  .icon-menu ul li a {
+    width: 38px;
+    height: 38px;
+  }
+
+  .icon-menu ul li a img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .skills {
+    padding: 35px 12px;
+    margin-top: 30px;
+  }
+
+  .skills h1 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+
+  .skills ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 8px;
+  }
+
+  .skills ul li {
+    padding: 12px;
+    max-width: 100%;
+  }
+
+  .skills ul li img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .projects {
+    padding: 35px 12px;
+    margin-top: 30px;
+  }
+
+  .projects-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .projects-header p {
+    font-size: 0.9rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 0;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  .project-content {
+    padding: 15px;
+  }
+
+  .project-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-content p {
+    font-size: 0.85rem;
+  }
+
+  .project-tag {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+
+  .project-link {
+    padding: 7px 12px;
+    font-size: 0.8rem;
+  }
+
+  .about {
+    width: 95vw;
+    padding: 20px 15px;
+    text-align: center;
+    margin: 40px auto 0;
+  }
+
+  .about h1 {
+    font-size: 1.3rem;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .about-icon {
+    font-size: 1.3rem;
+    margin-right: 5px;
+  }
+
+  .about p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .connect {
+    width: 95vw;
+    padding: 30px 15px;
+    margin: 30px auto;
+  }
+
+  .connect h1 {
+    font-size: 1.3rem;
+  }
+
+  .connect p {
+    font-size: 0.85rem;
+  }
+
+  .connect ul a {
+    font-size: 0.8rem;
+  }
+
+  #conectA {
+    padding: 7px 35px;
+    font-size: 0.85rem;
+  }
+
+  footer {
+    padding: 35px 12px 18px;
+    margin-top: 50px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-section h4 {
+    font-size: 0.9rem;
+  }
+
+  .footer-section p {
+    font-size: 0.8rem;
+  }
+
+  .social-links {
+    gap: 12px;
+  }
+
+  .social-links a {
+    width: 38px;
+    height: 38px;
+  }
+
+  .social-links a img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-btn {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.75rem;
+  }
+}
+
+/* ===== EXTRA SMALL PHONES (Below 480px) ===== */
+@media (max-width: 479px) {
+  main {
+    flex-direction: column;
+    padding: 15px 10px;
+    margin-top: 12px;
+  }
+
+  .left-section {
+    padding: 12px 15px;
+    text-align: center;
+  }
+
+  .left-section h1 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .left-section h2 {
+    font-size: 0.9rem;
+  }
+
+  .left-section h2 span {
+    font-size: 1rem;
+  }
+
+  .left-section p {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+
+  .cta-btn {
+    padding: 7px 18px;
+    font-size: 0.8rem;
+  }
+
+  .right-section {
+    padding: 10px;
+    width: 100%;
+  }
+
+  #profilePic {
+    width: 130px;
+    height: 130px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0.5rem;
+    border-radius: 12px;
+    margin: 5px;
+  }
+
+  .logo {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  nav ul {
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 0.75rem;
+  }
+
+  .navbar a {
+    margin: 0 0.4rem;
+    font-size: 0.75rem;
+  }
+
+  .icon-menu ul {
+    gap: 8px;
+  }
+
+  .icon-menu ul li a {
+    width: 36px;
+    height: 36px;
+  }
+
+  .icon-menu ul li a img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .skills {
+    padding: 30px 10px;
+    margin-top: 25px;
+  }
+
+  .skills h1 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .skills ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0 5px;
+  }
+
+  .skills ul li {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .skills ul li img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .projects {
+    padding: 30px 10px;
+    margin-top: 25px;
+  }
+
+  .projects-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .projects-header p {
+    font-size: 0.8rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+
+  .project-content {
+    padding: 12px;
+  }
+
+  .project-content h3 {
+    font-size: 1rem;
+  }
+
+  .project-content p {
+    font-size: 0.8rem;
+  }
+
+  .project-tag {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+  }
+
+  .project-link {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+
+  .about {
+    width: 98vw;
+    padding: 18px 12px;
+    text-align: center;
+    margin: 35px auto 0;
+  }
+
+  .about h1 {
+    font-size: 1.1rem;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .about-icon {
+    font-size: 1.1rem;
+    margin-right: 4px;
+  }
+
+  .about p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .connect {
+    width: 98vw;
+    padding: 25px 12px;
+    margin: 25px auto;
+  }
+
+  .connect h1 {
+    font-size: 1.1rem;
+  }
+
+  .connect p {
+    font-size: 0.8rem;
+  }
+
+  .connect ul a {
+    font-size: 0.75rem;
+  }
+
+  #conectA {
+    padding: 6px 30px;
+    font-size: 0.75rem;
+    width: auto;
+  }
+
+  footer {
+    padding: 30px 10px 15px;
+    margin-top: 40px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .footer-section h3 {
+    font-size: 1rem;
+  }
+
+  .footer-section h4 {
+    font-size: 0.85rem;
+  }
+
+  .footer-section p {
+    font-size: 0.75rem;
+  }
+
+  .social-links {
+    gap: 10px;
+  }
+
+  .social-links a {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social-links a img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 6px;
+  }
+
+  .footer-btn {
+    padding: 6px 18px;
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.7rem;
+  }
+
+  header {
+    margin: 0 -10px;
+  }
+}
+
+/* Ensure 4 columns on wider desktops (>=1000px) so skills show 4 per row */
+@media (min-width: 1000px) {
+  .skills ul {
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    gap: 30px;
+  }
+}
